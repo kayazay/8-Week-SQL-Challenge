@@ -12,7 +12,7 @@ CREATE VIEW joined_diner AS (
     LEFT JOIN dannys_diner.members ON members.customer_id = sales.customer_id
 );
 -- 1.What is the total amount each customer spent at the restaurant ?
-SELECT
+mdtsql -q SELECT
   customer_id,
   SUM(price) AS total_amount
 FROM
