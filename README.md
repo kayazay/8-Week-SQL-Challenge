@@ -1,6 +1,7 @@
 # 🍜 Case Study #1 - Danny's Diner
 <p align="center">
-<img src="https://drive.google.com/file/d/1Or_QY4vtUhuiFmzg1SyINwaXTxpoRh3x/view?usp=sharing" width=40% height=40%>
+
+<img src="https://user-images.githubusercontent.com/60517587/175916811-83b01187-1a33-4bc2-9d8f-7a29115b2233.png" width=40% height=40% />
 
 ## 📕 Table Of Contents
 * 🛠️ [Problem Statement](#problem-statement)
@@ -82,18 +83,20 @@ The final members table captures the `join_date` when a `customer_id` joined the
 
  </details>
 
-### **Relationship between tables**
+### **Relationship between Tables**
 <details>
 
 <summary>
 View E.R.D diagram
 </summary>
-https://drive.google.com/drive/folders/1rLidc48w-SyO8sIBj0AEr0cDBJLyRoFc
+<img src="https://user-images.githubusercontent.com/60517587/175916813-f7a5997b-7b0f-4be5-939a-e488ed24b2b5.png" width=50% height=50%>
 </details>
+
+<br/>
 
 ## :question:️ Case Study Questions
 <p align="center">
-<img src="https://tenor.com/view/im-ready-to-answer-some-questions-serayah-marie-claire-im-ready-to-answer-it-lets-start-answering-those-questions-gif-18710763" width=80% height=80%>
+<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=30% height=10%>
 
 1. What is the total amount each customer spent at the restaurant?
 2. How many days has each customer visited the restaurant?
