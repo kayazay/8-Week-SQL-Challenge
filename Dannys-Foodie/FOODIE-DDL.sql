@@ -2680,7 +2680,7 @@ VALUES
 
 
 
--- The PK `plan_id` in plans table corresponds to the FK `plan_id` in subscriptions table.
+-- We dive into both tables first of all, to get an overview of their content. 
 SELECT
   COUNT(DISTINCT plan_id)
 FROM
@@ -2689,10 +2689,10 @@ SELECT
   COUNT(DISTINCT plan_id)
 FROM
   foodie_fi.subscriptions;
-  
--- The columns have the same values in both tables, so a LEFT /
-  INNER JOIN would be fine.
- DROP VIEW IF EXISTS joined_foodie;
+-- The PK `plan_id` in plans table corresponds to the FK `plan_id` in subscriptions table.  
+-- The columns have the same values in both tables, so a _LEFT or _INNER JOIN would be fine.
+ -- Next, we create a view that encompasses fields from both tables. 
+DROP VIEW IF EXISTS joined_foodie;
 CREATE VIEW joined_foodie AS (
     SELECT
       customer_id,
@@ -2705,7 +2705,7 @@ CREATE VIEW joined_foodie AS (
       LEFT JOIN foodie_fi.subscriptions ON subscriptions.plan_id = plans.plan_id
   );
   
--- To analyse the data
+-- The following query shows that every customer did the trial plan once.
 SELECT
   customer_id,
   COUNT(*)
@@ -2717,8 +2717,7 @@ GROUP BY
   1
 ORDER BY
   2;
-  
--- This shows that every customer did the trial plan and only once.
+-- This shows that every customer started with a trial plan before going for other subscription packages.
   WITH t1 AS (
     SELECT
       customer_id,
@@ -2738,4 +2737,4 @@ FROM
 WHERE
   rownum = 1
   AND plan_name != 'trial';
--- This shows that every customer started with a trial plan
+
