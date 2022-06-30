@@ -96,7 +96,7 @@ View E.R.D diagram
 
 ## :question:️ Case Study Questions
 <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=30% height=10%>
+<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=40% height=30%>
 
 1. What is the total amount each customer spent at the restaurant?
 2. How many days has each customer visited the restaurant?
