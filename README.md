@@ -2,13 +2,13 @@
 
 <p align="center">
 
-<img src="https://user-images.githubusercontent.com/60517587/175916811-83b01187-1a33-4bc2-9d8f-7a29115b2233.png" width=40% height=40% />
+<img src="https://user-images.githubusercontent.com/60517587/176776889-f5249add-90e1-4f7b-8c2d-02bd9408844d.gif" width=80% height=60% />
 
 ## Welcome to Eze's first Github Repository.
 
-* 🛠️ About Repo
-* 📂 What to expect
-* References
+* ### 🛠️ [About Repo](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#%EF%B8%8F-about-repo)
+* ### 📂 [What To Expect](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#what-to-expect)
+* ### [References](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#references)
   
 ---
 
