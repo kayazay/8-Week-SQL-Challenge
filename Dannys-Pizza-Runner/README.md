@@ -976,7 +976,9 @@ GROUP BY
 ---
 
 <details>
-<summary> For my next step I would create a TEMP TABLE - `joined_pizza`. Now we get an overview of the new table created.
+<summary> For my next step I would create a temp table (DDL contained here.). 
+
+The table `joined_pizza` is shown below, to get an overview. 
    </summary>
 
 ```sql
@@ -1158,9 +1160,9 @@ ORDER BY
 ### D. PRICING AND RATINGS - QUESTIONS AND SOLUTIONS
 
 <details>
-<summary>
+<summary> To solve the questions in this challenge I created a VIEW that encompasses all fields required in the questions for this section D.
 
-To solve the questions in this challenge I created a VIEW - `pizza_pricing` that encompasses all fields required in the questions for this section D. 
+The view - `pizza_pricing` is shown below.
 </summary>
 
 ```sql
@@ -1252,8 +1254,9 @@ FROM
 ---
 
 <details>
-<summary>
-I now create a TEMP TABLE - `dwd_pizza_table` for all the required fields in subsequent questions.
+<summary> Next I created a TEMP TABLE for all the required fields in subsequent questions.
+
+The table  - `dwd_pizza_table` is shown below.
 </summary>
 
 ```sql
@@ -1319,16 +1322,7 @@ FROM
 ---
 
 #### **Q4. Using your newly generated table - can you join all of the information together to form a table which has the following information for successful deliveries?**
-+ customer_id,
-+ order_id,
-+ runner_id,
-+ rating,
-+ order_time,
-+ pickup_time,
-+ Time between order and pickup,
-+ Delivery duration,
-+ Average speed, and
-+ Total number of pizzas.
++ `customer_id`, `order_id`, `runner_id`, `rating`, `order_time`, `pickup_time`, time between order and pickup, delivery duration, average speed, and total number of pizzas.
 
 ```sql
 SELECT
