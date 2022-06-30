@@ -782,7 +782,8 @@ GROUP BY
 <details>
 <summary>
 To solve the questions in this challenge I created a VIEW (DDL contained within the dropdown)
- The view - `ingredients_pizza` encompasses all fields required in the questions for this section C. 
+
+The view - `ingredients_pizza` encompasses all fields required in the questions for this section C. 
 </summary>
 
 ```sql
