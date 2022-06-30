@@ -8,9 +8,9 @@
 
 ## 📕 Table Of Contents
 * 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#%EF%B8%8F-problem-statement)
-* 📂 [Dataset](#dataset)
-* :question:️ [Case Study Questions](#case-study-questions)
-* 🚀 [Solutions](#solutions)
+* 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#-dataset)
+* :question:️ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#question%EF%B8%8F-case-study-questions)
+* 🚀 [Solutions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#-solutions)
   
 ---
 
@@ -19,8 +19,6 @@
 > Subscription based businesses are super popular and Danny realised that there was a large gap in the market - he wanted to create a new streaming service that only had food related content - something like Netflix but with only cooking shows! Danny finds a few smart friends to launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, giving their customers unlimited on-demand access to exclusive food videos from around the world! This case study focuses on using subscription style digital data to answer important business questions.
 
  <br /> 
-
----
 
 ## 📂 Dataset
 Danny has shared with you 2 key datasets for this case study:
