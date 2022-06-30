@@ -7,9 +7,10 @@
 <br/>
 
 ## 📕 Table Of Contents
+
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#%EF%B8%8F-problem-statement)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#-dataset)
-* #### :question:️[Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#question%EF%B8%8F-case-study-questions)
+* ### :question:️ [  Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#question%EF%B8%8F-case-study-questions)
 * ### 🚀 [Solutions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#-solutions)
  
 ---
@@ -91,7 +92,7 @@ View E.R.D diagram
 
 ## :question:️ Case Study Questions
 <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/176677544-770acfb0-3024-43f6-a54f-11a2a4007583.gif" width=70% height=20%>
+<img src="https://user-images.githubusercontent.com/60517587/176677544-770acfb0-3024-43f6-a54f-11a2a4007583.gif" width=60% height=20%>
 
 1.  How many customers has Foodie-Fi ever had?
 2.  What is the monthly distribution of `trial` plan `start_date` values for our dataset - use the start of the month as the group by value
