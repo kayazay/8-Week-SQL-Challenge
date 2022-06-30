@@ -1,10 +1,12 @@
 # 😊 Danny Ma's 8 Week SQL Challenge
 
+
+## Welcome to Eze's first Github Repository.
+
 <p align="center">
 
 <img src="https://user-images.githubusercontent.com/60517587/176776889-f5249add-90e1-4f7b-8c2d-02bd9408844d.gif" width=80% height=60% />
 
-## Welcome to Eze's first Github Repository.
 
 * ### 🛠️ [About Repo](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#%EF%B8%8F-about-repo)
 * ### 📂 [What To Expect](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#what-to-expect)
@@ -15,6 +17,7 @@
 ## 🛠️ About Repo
 
 This repository serves as my entry to the 8 Week Serious SQL Challenge.
+
 Throughout the **Data with Danny** Serious SQL course there were several case studies, and datasets from various industries were presented to gain mastery of tricks, techniques and best practice methods of solving data problems with SQL.
 
 Concepts such as the following were rigorously explained with practice questions and brain teasers to drive the points home:
