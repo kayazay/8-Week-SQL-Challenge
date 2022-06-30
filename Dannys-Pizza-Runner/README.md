@@ -1,13 +1,17 @@
 # 🍕 Case Study #2 - Danny's Pizza Runner
 <p align="center">
 
-<img src="https://user-images.githubusercontent.com/60517587/175916811-83b01187-1a33-4bc2-9d8f-7a29115b2233.png" width=60% height=40% />
+<img src="https://user-images.githubusercontent.com/60517587/176715403-26850b68-8cdf-4506-ab2e-35fb24fe4bca.png" width=50% height=40% />
 
 ## 📕 Table Of Contents
-* 🛠️ [Problem Statement](#problem-statement)
-* 📂 [Dataset](#dataset)
-* :question:️ [Case Study Questions](#case-study-questions)
-* 🚀 [Solutions](#solutions)
+* ### 🛠️ [Problem Statement](#problem-statement)
+* ### 📂 [Dataset](#dataset)
+* ### :question:️ [Case Study Questions](#case-study-questions)
+  * #### [PIZZA METRICS]()
+  * #### [RUNNER AND CUSTOMER EXPERIENCE]()
+  * #### [INGREDIENTS OPTIMIZATION]()
+  * #### [PRICING AND RATINGS]()
+* ### ❓ [Solutions](#solutions)
   
 ---
 
@@ -211,7 +215,7 @@ This table contains all of the `topping_name` values with their corresponding `t
 <summary>
 View E.R.D diagram
 </summary>
-<img src="https://user-images.githubusercontent.com/60517587/175916813-f7a5997b-7b0f-4be5-939a-e488ed24b2b5.png" width=70% height=60%>
+<img src="https://user-images.githubusercontent.com/60517587/176715385-adf3edf3-c17a-4ed3-9d8e-c7948a93318c.png" width=80% height=50%>
 </details>
 
 
@@ -219,9 +223,15 @@ View E.R.D diagram
 
 ## :question:️ Case Study Questions
 <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=60% height=50%>
+<img src="https://user-images.githubusercontent.com/60517587/176716805-463a8ae9-0ff8-4b98-93ef-ecf912f6f0c0.gif" width=60% height=50%>
 
+This case study has LOTS of questions - they are broken up by 4 sections including: 
++ **Pizza Metrics**,  
++ **Runner and Customer Experience**,
++ **Ingredient Optimisation**, and
++ **Pricing and Ratings**. 
 
+Feel free to explore whichever appeals to you the most, or all four (if you're like me and are obsessed with completion :) )
 ### A. PIZZA METRICS QUESTIONS AND SOLUTIONS
 
 #### **Q1. How many pizzas were ordered?**
