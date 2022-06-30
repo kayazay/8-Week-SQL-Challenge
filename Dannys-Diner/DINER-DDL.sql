@@ -51,3 +51,19 @@ INSERT INTO members
 VALUES
   ('A', '2021-01-07'),
   ('B', '2021-01-09');
+  
+  
+-- I created a view which I used to solve all challenges and questions within this case study.
+DROP VIEW IF EXISTS joined_diner;
+CREATE VIEW joined_diner AS (
+  SELECT
+    sales.customer_id,
+    sales.order_date,
+    menu.product_name,
+    menu.price,
+    members.join_date
+  FROM
+    dannys_diner.sales
+    LEFT JOIN dannys_diner.menu ON menu.product_id = sales.product_id
+    LEFT JOIN dannys_diner.members ON members.customer_id = sales.customer_id
+);
