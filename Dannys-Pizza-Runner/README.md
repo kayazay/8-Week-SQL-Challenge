@@ -63,6 +63,26 @@ Customer pizza orders are captured in the  `customer_orders` table with 1 row fo
 | 9        | 103         | 1        | 4                        | 1, 5                     | 2021-01-10 11:22:59  |
 | 10       | 104         | 1        | null                     | null                     | 2021-01-11 18:34:49  |
 | 10       | 104         | 1        | 2, 6                     | 1, 4                     | 2021-01-11 18:34:49  |
+  
+There was need to clean this dataset because of data quality issues and a VIEW was created - `new_customer_order`, the DDL can be found in the general DDL script, and its rows are shown below. Also an extra column was added to track unique inidividual pizzas.
+  
+ | order_id | customer_id | pizza_id | pizza_name  | exclusions | extras | order_time               | rowcheck |
+|----------|-------------|----------|-------------|------------|--------|--------------------------|----------|
+| 1        | 101         | 1        | Meat Lovers |            |        | 2021-01-01T18:05:02.000Z | 7        |
+| 2        | 101         | 1        | Meat Lovers |            |        | 2021-01-01T19:00:52.000Z | 2        |
+| 3        | 102         | 1        | Meat Lovers |            |        | 2021-01-02T23:51:23.000Z | 3        |
+| 3        | 102         | 2        | Vegetarian  |            |        | 2021-01-02T23:51:23.000Z | 11       |
+| 4        | 103         | 2        | Vegetarian  | 4          |        | 2021-01-04T13:23:46.000Z | 14       |
+| 4        | 103         | 1        | Meat Lovers | 4          |        | 2021-01-04T13:23:46.000Z | 8        |
+| 4        | 103         | 1        | Meat Lovers | 4          |        | 2021-01-04T13:23:46.000Z | 9        |
+| 5        | 104         | 1        | Meat Lovers |            | 1      | 2021-01-08T21:00:29.000Z | 10       |
+| 6        | 101         | 2        | Vegetarian  |            |        | 2021-01-08T21:03:13.000Z | 13       |
+| 7        | 105         | 2        | Vegetarian  |            | 1      | 2021-01-08T21:20:29.000Z | 12       |
+| 8        | 102         | 1        | Meat Lovers |            |        | 2021-01-09T23:54:33.000Z | 4        |
+| 9        | 103         | 1        | Meat Lovers | 4          | 1, 5   | 2021-01-10T11:22:59.000Z | 5        |
+| 10       | 104         | 1        | Meat Lovers | 2, 6       | 1, 4   | 2021-01-11T18:34:49.000Z | 1        |
+| 10       | 104         | 1        | Meat Lovers |            |        | 2021-01-11T18:34:49.000Z | 6        |
+  
 
 </details>
 
@@ -89,6 +109,20 @@ The `pickup_time` is the timestamp at which the runner arrives at the Pizza Runn
 | 9        | 2         | null                | null     | null       | Customer Cancellation   |
 | 10       | 1         | 2021-01-11 18:50:20 | 10km     | 10minutes  | null                    |
 
+This dataset was inconsistent and had data quality issues also, so I had to create a VIEW - `new_runner_orders` to address these issues as well as join information from other tables.
+
+  | order_id | runner_id | pickup_time         | distance | duration | cancellation            | registration_date        |
+|----------|-----------|---------------------|----------|----------|-------------------------|--------------------------|
+| 1        | 1         | 2021-01-01 18:15:34 | 20       | 20       |                         | 2021-01-01T00:00:00.000Z |
+| 2        | 1         | 2021-01-01 19:10:54 | 20       | 20       |                         | 2021-01-01T00:00:00.000Z |
+| 3        | 1         | 2021-01-03 00:12:37 | 13.4     | 13       |                         | 2021-01-01T00:00:00.000Z |
+| 4        | 2         | 2021-01-04 13:53:03 | 23.4     | 23       |                         | 2021-01-03T00:00:00.000Z |
+| 5        | 3         | 2021-01-08 21:10:57 | 10       | 10       |                         | 2021-01-08T00:00:00.000Z |
+| 6        | 3         |                     |          |          | Restaurant Cancellation | 2021-01-08T00:00:00.000Z |
+| 7        | 2         | 2021-01-08 21:30:45 | 25       | 25       |                         | 2021-01-03T00:00:00.000Z |
+| 8        | 2         | 2021-01-10 00:15:02 | 23.4     | 23       |                         | 2021-01-03T00:00:00.000Z |
+| 9        | 2         |                     |          |          | Customer Cancellation   | 2021-01-03T00:00:00.000Z |
+| 10       | 1         | 2021-01-11 18:50:20 | 10       | 10       |                         | 2021-01-01T00:00:00.000Z |
 
  </details>
 
@@ -149,7 +183,25 @@ This table contains all of the `topping_name` values with their corresponding `t
 | 11         | Tomatoes     |
 | 12         | Tomato Sauce |
 
+ This table and the `pizza_recipes` table have obviuous connections and so I created this VIEW - `new_pizza_recipes` to join information from both tables and convey it in a more compact manner.
 
+  | pizza_id | toppings                | toppings_indiv | topping_name |
+|----------|-------------------------|----------------|--------------|
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 1              | Bacon        |
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 2              | BBQ Sauce    |
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 3              | Beef         |
+| 2        | 4, 6, 7, 9, 11, 12      | 4              | Cheese       |
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 4              | Cheese       |
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 5              | Chicken      |
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 6              | Mushrooms    |
+| 2        | 4, 6, 7, 9, 11, 12      | 6              | Mushrooms    |
+| 2        | 4, 6, 7, 9, 11, 12      | 7              | Onions       |
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 8              | Pepperoni    |
+| 2        | 4, 6, 7, 9, 11, 12      | 9              | Peppers      |
+| 1        | 1, 2, 3, 4, 5, 6, 8, 10 | 10             | Salami       |
+| 2        | 4, 6, 7, 9, 11, 12      | 11             | Tomatoes     |
+| 2        | 4, 6, 7, 9, 11, 12      | 12             | Tomato Sauce |
+  
  </details>
 
 
