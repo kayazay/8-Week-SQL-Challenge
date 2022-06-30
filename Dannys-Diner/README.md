@@ -1,13 +1,13 @@
-# 🍜 Case Study #1 - Danny's Diner
+# 📶 Case Study #1 - Danny's Diner
 <p align="center">
 
 <img src="https://user-images.githubusercontent.com/60517587/175916811-83b01187-1a33-4bc2-9d8f-7a29115b2233.png" width=40% height=40% />
 
 ## 📕 Table Of Contents
-* 🛠️ [Problem Statement](#problem-statement)
-* 📂 [Dataset](#dataset)
-* :question:️ [Case Study Questions](#case-study-questions)
-* 🚀 [Solutions](#solutions)
+* ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Diner#%EF%B8%8F-problem-statement)
+* ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Diner#-dataset)
+* ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Diner#question%EF%B8%8F-case-study-questions)
+* ### 🚀 [Solutions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Diner#-solutions)
   
 ---
 
