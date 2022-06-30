@@ -4,9 +4,9 @@
 <img src="https://user-images.githubusercontent.com/60517587/176715403-26850b68-8cdf-4506-ab2e-35fb24fe4bca.png" width=50% height=40% />
 
 ## 📕 Table Of Contents
-* ### 🛠️ [Problem Statement](#problem-statement-1)
-* ### 📂 [Dataset](#dataset-1)
-* ### ❓  [Case Study Questions](#case-study-questions-1)
+* ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#%EF%B8%8F-problem-statement-1)
+* ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-dataset-1)
+* ### ❓  [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#question%EF%B8%8F-case-study-questions)
   * #### 📈 [PIZZA METRICS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#a-pizza-metrics-questions-and-solutions)
   * #### 🚚 [RUNNER AND CUSTOMER EXPERIENCE](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#b-runner-and-customer-experience---questions-and-solutions)
   * #### 🌶️ [INGREDIENTS OPTIMIZATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#c-ingredients-optimization---questions-and-solutions)
