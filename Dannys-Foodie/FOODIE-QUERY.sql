@@ -1,13 +1,8 @@
- --1.How many customers has Foodie - Fi ever had ?
+ --1. How many customers has Foodie - Fi ever had ?
 SELECT
   COUNT(DISTINCT customer_id)
 FROM
   joined_foodie;
-
-| total_num_customers |
-|---------------------|
-| 1000                |
-
 
 --2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value.
 SELECT
@@ -21,24 +16,8 @@ GROUP BY
   1
 ORDER BY
   1;
-  
-| actual_month             | number_of_subscribers |
-|--------------------------|-----------------------|
-| 2020-01-01 | 88 |
-| 2020-02-01 | 68 |
-| 2020-03-01 | 94 |
-| 2020-04-01 | 81 |
-| 2020-05-01 | 88 |
-| 2020-06-01 | 79 |
-| 2020-07-01 | 89 |
-| 2020-08-01 | 88 |
-| 2020-09-01 | 87 |
-| 2020-10-01 | 79 |
-| 2020-11-01 | 75 |
-| 2020-12-01 | 84 |
 
-
---3.What plan start_date values occur after the year 2020 for our dataset ? Show the breakdown by count of events for each plan_name.
+--3. What plan start_date values occur after the year 2020 for our dataset ? Show the breakdown by count of events for each plan_name.
 SELECT
   plan_id,
   plan_name,
@@ -53,15 +32,7 @@ GROUP BY
 ORDER BY
   1;
 
-| plan_id | plan_name     | events |
-|---------|---------------|--------|
-| 1       | basic monthly | 8      |
-| 2       | pro monthly   | 60     |
-| 3       | pro annual    | 63     |
-| 4       | churn         | 71     |
-
-
---4.What is the customer count and percentage of customers who have churned rounded to 1 decimal place ?
+--4. What is the customer count and percentage of customers who have churned rounded to 1 decimal place ?
   WITH churned_customers AS (
     SELECT
       customer_id,
@@ -81,11 +52,7 @@ SELECT
 FROM
   churned_customers;
 
-| churn_customers | percentage |
-|-----------------|------------|
-| 307             | 30.70%     |
-
---5.How many customers have churned straight after their initial free trial - what percentage is this rounded to 1 decimal place ?
+--5. How many customers have churned straight after their initial free trial - what percentage is this rounded to 1 decimal place ?
   WITH t1 AS (
     SELECT
       customer_id,
@@ -112,11 +79,7 @@ SELECT
 FROM
   t1;
 
-| num_trial_then_churn | percentage |
-|----------------------|------------|
-| 92| 9.20%      |
-
---6.What is the number and percentage of customer plans after their initial free trial ?
+--6. What is the number and percentage of customer plans after their initial free trial ?
   WITH t1 AS (
     SELECT
       plan_id,
@@ -145,14 +108,7 @@ GROUP BY
   1,
   2;
 
-| plan_id | plan_name     | num_subscribers | percentage |
-|---------|---------------|-----------------|------------|
-| 1       | basic monthly | 546             | 55%        |
-| 2       | pro monthly   | 325             | 33%        |
-| 3       | pro annual    | 37              | 4%         |
-| 4       | churn         | 92              | 9%         |
-
---7.What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31 ?
+--7. What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31 ?
   WITH t1 AS (
     SELECT
       customer_id,
@@ -187,14 +143,7 @@ GROUP BY
 ORDER BY
   1;
 
-| plan_id | plan_name     | num_subscribers | percentage |
-|---------|---------------|-----------------|------------|
-| 1       | basic monthly | 546             | 55%        |
-| 2       | pro monthly   | 325             | 33%        |
-| 3       | pro annual    | 37              | 4%         |
-| 4       | churn         | 92              | 9%         |
-
---8.How many customers have upgraded to an annual plan in 2020 ?
+--8. How many customers have upgraded to an annual plan in 2020 ?
 SELECT
   COUNT(*) AS annual_subscribers_2020
 FROM
@@ -207,11 +156,7 @@ WHERE
   ) = 2020
   AND plan_name = 'pro annual';
 
-| annual_subscribers_2020 |
-|-------------------------|
-| 195  |
-
---9.How many days on average does it take for a customer to an annual plan from the day they join Foodie - Fi ?
+--9. How many days on average does it take for a customer to an annual plan from the day they join Foodie - Fi ?
 SELECT
   ROUND(AVG(jf1.start_date - jf2.start_date)) AS avg_days_before_pro_annual
 FROM
@@ -228,11 +173,7 @@ FROM
 WHERE
   plan_name = 'pro annual';
 
-| avg_days_before_pro_annual |
-|----------------------------|
-| 105     |
-
---10.
+--10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)?
   WITH t1 AS (
     SELECT
       jf1.start_date,
@@ -277,22 +218,7 @@ FROM
 ORDER BY
   start_range;
 
-| after_30_day_periods | num_subscribers |
-|----------------------|-----------------|
-| 0-30 days            | 48              |
-| 30-60 days           | 25              |
-| 60-90 days           | 33              |
-| 90-120 days          | 35              |
-| 120-150 days         | 43              |
-| 150-180 days         | 35              |
-| 180-210 days         | 27              |
-| 210-240 days         | 4               |
-| 240-270 days         | 5               |
-| 270-300 days         | 1               |
-| 300-330 days         | 1               |
-| 330-360 days         | 1               |
-
---11.
+--11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
   WITH first_cte AS (
     SELECT
       *
@@ -334,10 +260,7 @@ SELECT
 FROM
   year_2020;
 
-| customers_who_downgraded_pm_to_bm |
-|-----------------------------------|
-| 163            |
-
+-- New payment table.
 DROP TABLE IF EXISTS new_payment_table;
 CREATE TEMP TABLE new_payment_table AS (
   WITH first_cte AS (
@@ -527,62 +450,3 @@ CREATE TEMP TABLE new_payment_table AS (
   FROM
     final_cte
 );
-SELECT
-  *
-FROM
-  new_payment_table
-WHERE
-  customer_id IN (1, 2, 7, 13, 15, 16, 18, 19, 25, 39);
-
-| customer_id | plan_id | plan_name     | payment_date             | amount | payment_order |
-|-------------|---------|---------------|--------------------------|--------|---------------|
-| 1           | 1       | basic monthly | 2020-08-08 | 9.9    | 1             |
-| 1           | 1       | basic monthly | 2020-09-08 | 9.9    | 2             |
-| 1           | 1       | basic monthly | 2020-10-08 | 9.9    | 3             |
-| 1           | 1       | basic monthly | 2020-11-08 | 9.9    | 4             |
-| 1           | 1       | basic monthly | 2020-12-08 | 9.9    | 5             |
-| 2           | 3       | pro annual    | 2020-09-27 | 199    | 1             |
-| 7           | 1       | basic monthly | 2020-02-12 | 9.9    | 1             |
-| 7           | 1       | basic monthly | 2020-03-12 | 9.9    | 2             |
-| 7           | 1       | basic monthly | 2020-04-12 | 9.9    | 3             |
-| 7           | 1       | basic monthly | 2020-05-12 | 9.9    | 4             |
-| 7           | 2       | pro monthly   | 2020-05-22 | 10     | 5             |
-| 7           | 2       | pro monthly   | 2020-06-22 | 19.9   | 6             |
-| 7           | 2       | pro monthly   | 2020-07-22 | 19.9   | 7             |
-| 7           | 2       | pro monthly   | 2020-08-22 | 19.9   | 8             |
-| 7           | 2       | pro monthly   | 2020-09-22 | 19.9   | 9             |
-| 7           | 2       | pro monthly   | 2020-10-22 | 19.9   | 10            |
-| 7           | 2       | pro monthly   | 2020-11-22 | 19.9   | 11            |
-| 7           | 2       | pro monthly   | 2020-12-22 | 19.9   | 12            |
-| 13          | 1       | basic monthly | 2020-12-22 | 9.9    | 1             |
-| 15          | 2       | pro monthly   | 2020-03-24 | 19.9   | 1             |
-| 15          | 2       | pro monthly   | 2020-04-24 | 19.9   | 2             |
-| 16          | 1       | basic monthly | 2020-06-07 | 9.9    | 1             |
-| 16          | 1       | basic monthly | 2020-07-07 | 9.9    | 2             |
-| 16          | 1       | basic monthly | 2020-08-07 | 9.9    | 3             |
-| 16          | 1       | basic monthly | 2020-09-07 | 9.9    | 4             |
-| 16          | 1       | basic monthly | 2020-10-07 | 9.9    | 5             |
-| 16          | 3       | pro annual    | 2020-10-21 | 199    | 6             |
-| 18          | 2       | pro monthly   | 2020-07-13 | 19.9   | 1             |
-| 18          | 2       | pro monthly   | 2020-08-13 | 19.9   | 2             |
-| 18          | 2       | pro monthly   | 2020-09-13 | 19.9   | 3             |
-| 18          | 2       | pro monthly   | 2020-10-13 | 19.9   | 4             |
-| 18          | 2       | pro monthly   | 2020-11-13 | 19.9   | 5             |
-| 18          | 2       | pro monthly   | 2020-12-13 | 19.9   | 6             |
-| 19          | 2       | pro monthly   | 2020-06-29 | 19.9   | 1             |
-| 19          | 2       | pro monthly   | 2020-07-29 | 19.9   | 2             |
-| 19          | 3       | pro annual    | 2020-08-29 | 199    | 3             |
-| 19          | 2       | pro monthly   | 2020-08-29 | 19.9   | 4             |
-| 25          | 1       | basic monthly | 2020-05-17 | 9.9    | 1             |
-| 25          | 2       | pro monthly   | 2020-06-16 | 10     | 2             |
-| 25          | 2       | pro monthly   | 2020-07-16 | 19.9   | 3             |
-| 25          | 2       | pro monthly   | 2020-08-16 | 19.9   | 4             |
-| 25          | 2       | pro monthly   | 2020-09-16 | 19.9   | 5             |
-| 25          | 2       | pro monthly   | 2020-10-16 | 19.9   | 6             |
-| 25          | 2       | pro monthly   | 2020-11-16 | 19.9   | 7             |
-| 25          | 2       | pro monthly   | 2020-12-16 | 19.9   | 8             |
-| 39          | 1       | basic monthly | 2020-06-04 | 9.9    | 1             |
-| 39          | 1       | basic monthly | 2020-07-04 | 9.9    | 2             |
-| 39          | 1       | basic monthly | 2020-08-04 | 9.9    | 3             |
-| 39          | 2       | pro monthly   | 2020-08-25 | 10     | 4             |
-
