@@ -1,20 +1,20 @@
-# 😊 Danny Ma's 8 Week SQL Challenge
+# Danny Ma's 8 Week SQL Challenge
 
 
-## Welcome to Eze's first Github Repository.
+## 😊 Welcome to Eze's first Github Repository.
 
 <p align="center">
 
 <img src="https://user-images.githubusercontent.com/60517587/176776889-f5249add-90e1-4f7b-8c2d-02bd9408844d.gif" width=80% height=60% />
 
 
-* ### 🛠️ [About Repo](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#%EF%B8%8F-about-repo)
-* ### 📂 [What To Expect](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#what-to-expect)
-* ### [References](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#references)
+* ### 💁‍♂️ [About Repo](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#%EF%B8%8F-about-repo)
+* ### 👀 [What To Expect](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#what-to-expect)
+* ### 📝 [References](https://github.com/kayazay/8-Week-SQL-Challenge/edit/main/README.md#references)
   
 ---
 
-## 🛠️ About Repo
+## 💁‍♂️ About Repo
 
 This repository serves as my entry to the 8 Week Serious SQL Challenge.
 
@@ -31,13 +31,13 @@ Concepts such as the following were rigorously explained with practice questions
 * GROUP BY clause;
 * REGEXP formatting techniques, and lots more.
 
-## What to expect? 
+## 👀 What to Expect? 
 * In different ways, the concepts and tricks mentioned above would be featured in one or more of the scripts here.
 * Once completed, this repo would hold 8 folders - one for each case study - housing the SQL scripts that answer the questions in the challenges, as well as the corresponding DDLs of each schema.
 * There is also a README page in each folder that serves to explain each case study, and display the results of every query in the script.
 
 
-## References
+## 📝 References
 <details>
 <summary>
 Check out the 8 Week SQL Challenge by Danny Ma yourself!
