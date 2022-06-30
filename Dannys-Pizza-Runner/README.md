@@ -6,13 +6,12 @@
 ## 📕 Table Of Contents
 * ### 🛠️ [Problem Statement](#problem-statement)
 * ### 📂 [Dataset](#dataset)
-* ### :question:️ [Case Study Questions](#case-study-questions)
-  * #### [PIZZA METRICS]()
-  * #### [RUNNER AND CUSTOMER EXPERIENCE]()
-  * #### [INGREDIENTS OPTIMIZATION]()
-  * #### [PRICING AND RATINGS]()
-* ### ❓ [Solutions](#solutions)
-  
+* ### ❓  [Case Study Questions](#case-study-questions)
+  * #### 📈 [PIZZA METRICS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#a-pizza-metrics-questions-and-solutions)
+  * #### 🚚 [RUNNER AND CUSTOMER EXPERIENCE](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#b-runner-and-customer-experience---questions-and-solutions)
+  * #### 🌶️ [INGREDIENTS OPTIMIZATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#c-ingredients-optimization---questions-and-solutions)
+  * #### 💰 [PRICING AND RATINGS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#d-pricing-and-ratings---questions-and-solutions)
+ 
 ---
 
 ## 🛠️ Problem Statement
@@ -232,8 +231,11 @@ This case study has LOTS of questions - they are broken up by 4 sections includi
 + **Pricing and Ratings**. 
 
 Feel free to explore whichever appeals to you the most, or all four (if you're like me and are obsessed with completion :) )
-### A. PIZZA METRICS QUESTIONS AND SOLUTIONS
 
+<br/>
+
+### A. PIZZA METRICS QUESTIONS AND SOLUTIONS
+ 
 #### **Q1. How many pizzas were ordered?**
 
 ```sql
@@ -508,7 +510,7 @@ GROUP BY
 
 ### B. RUNNER AND CUSTOMER EXPERIENCE - QUESTIONS AND SOLUTIONS
 
-To solve the questions in this challenge, I used the `joined_pizza` MATERIALIZED VIEW that was created in the DDL query.
+To solve the questions in this challenge, I used the MATERIALIZED VIEW - `joined_pizza` that was created in the DDL query.
 
 #### **Q1. How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01).**
 
@@ -974,10 +976,8 @@ GROUP BY
 ---
 
 <details>
-<summary>
-
-For my next step I would create a TEMP TABLE - `toppings_table`.
-</summary>
+<summary> For my next step I would create a TEMP TABLE - `joined_pizza`. Now we get an overview of the new table created.
+   </summary>
 
 ```sql
 DROP TABLE IF EXISTS toppings_table;
@@ -1043,19 +1043,6 @@ CREATE TEMP TABLE toppings_table AS (
   );
   ```
 </details>
-
-Now we get an overview of the new table created.
-
-```sql
-SELECT
-  *
-FROM
-  toppings_table
-ORDER BY
-  RANDOM()
-LIMIT
-  15;
-```
 
 | order_id | pizza_name | toppings_per_order | order_toppings_row | _count |
 |----------|------------|--------------------|--------------------|--------|
