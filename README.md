@@ -27,9 +27,8 @@ Concepts such as the following were rigorously explained with practice questions
 In different ways, these concepts and tricks would be featured in one or more of my submission.
 
 
-Once completed, this repo would hold 8 case studies 
-
-
+Once completed, this repo would hold 8 folders - one for each case study - housing the SQL scripts that answer the questions in the challenges, as well as the corresponding DDLs of each schema.
+There is also a README page in each folder that serves to explain each case study, and display the results of every of the queries in the script.
 
 ---
 
