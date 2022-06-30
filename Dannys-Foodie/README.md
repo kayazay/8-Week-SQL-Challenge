@@ -10,7 +10,7 @@
 
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#%EF%B8%8F-problem-statement-1)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#-dataset-1)
-* ### :question:️ [  Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#question%EF%B8%8F-case-study-questions-1)
+* ### :question:️ [  Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#question%EF%B8%8F-case-study-questions)
 * ### 🚀 [Solutions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#-solutions-1)
  
 ---
