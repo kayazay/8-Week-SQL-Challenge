@@ -1,7 +1,10 @@
 # 🍜 Case Study #3 - Danny's Foodie Fi
 <p align="center">
 
-<img src="https://user-images.githubusercontent.com/60517587/175916811-83b01187-1a33-4bc2-9d8f-7a29115b2233.png" width=40% height=40% />
+<img src="https://user-images.githubusercontent.com/60517587/176677610-221d22c5-40e1-4815-8d61-c9f258dd2d52.png" width=50% height=50% />
+
+
+<br/>
 
 ## 📕 Table Of Contents
 * 🛠️ [Problem Statement](#problem-statement)
@@ -17,6 +20,7 @@
 
  <br /> 
 
+---
 
 ## 📂 Dataset
 Danny has shared with you 2 key datasets for this case study:
@@ -80,22 +84,24 @@ When customers churn - they will keep their access until the end of their curren
 <summary>
 View E.R.D diagram
 </summary>
-<img src="https://user-images.githubusercontent.com/60517587/175916813-f7a5997b-7b0f-4be5-939a-e488ed24b2b5.png" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/60517587/176677716-358ae811-87d7-4554-b2bb-6ddf1f0b332e.png" width=50% height=50%>
 </details>
 
 <br/>
 
+---
+
 ## :question:️ Case Study Questions
 <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=30% height=10%>
+<img src="https://user-images.githubusercontent.com/60517587/176677544-770acfb0-3024-43f6-a54f-11a2a4007583.gif" width=70% height=20%>
 
 1.  How many customers has Foodie-Fi ever had?
-2.  What is the monthly distribution of  `trial`  plan  `start_date`  values for our dataset - use the start of the month as the group by value
-3.  What plan  `start_date`  values occur after the year 2020 for our dataset? Show the breakdown by count of events for each  `plan_name`
+2.  What is the monthly distribution of `trial` plan `start_date` values for our dataset - use the start of the month as the group by value
+3.  What plan `start_date` values occur after the year 2020 for our dataset? Show the breakdown by count of events for each `plan_name`
 4.  What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
 5.  How many customers have churned straight after their initial free trial - what percentage is this rounded to the nearest whole number?
 6.  What is the number and percentage of customer plans after their initial free trial?
-7.  What is the customer count and percentage breakdown of all 5  `plan_name`  values at  `2020-12-31`?
+7.  What is the customer count and percentage breakdown of all 5 `plan_name` values at `2020-12-31`?
 8.  How many customers have upgraded to an annual plan in 2020?
 9.  How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
 10.  Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc.)
@@ -105,7 +111,7 @@ View E.R.D diagram
 
 ## 🚀 Solutions
 
- ### **Q1.How many customers has Foodie - Fi ever had ?** 
+ ### **Q1. How many customers has Foodie - Fi ever had ?** 
 ```sql
 SELECT
   COUNT(DISTINCT customer_id)
@@ -116,7 +122,8 @@ FROM
 | total_num_customers |
 |---------------------|
 | 1000                |
---
+
+---
 
 
 ### **Q2. What is the monthly distribution of trial plan `start_date` values for our dataset - use the start of the month as the group by value.**
@@ -150,9 +157,9 @@ ORDER BY
 | 2020-11-01 | 75 |
 | 2020-12-01 | 84 |
 
---
+---
 
-### **Q3. What plan `start_date` values occur after the year 2020 for our dataset ? Show the breakdown by count of events for each `plan_name`.
+### **Q3. What plan `start_date` values occur after the year 2020 for our dataset ? Show the breakdown by count of events for each `plan_name`**.
 
 ```sql
 SELECT
@@ -177,9 +184,9 @@ ORDER BY
 | 3       | pro annual    | 63     |
 | 4       | churn         | 71     |
 
---
+---
 
-### **Q4.What is the customer count and percentage of customers who have churned rounded to 1 decimal place ?**
+### **Q4. What is the customer count and percentage of customers who have churned rounded to 1 decimal place ?**
 
 ```sql
   WITH churned_customers AS (
@@ -206,9 +213,10 @@ FROM
 |-----------------|------------|
 | 307             | 30.70%     |
 
---
+---
 
-### ** Q5.How many customers have churned straight after their initial free trial - what percentage is this rounded to 1 decimal place ?
+### **Q5. How many customers have churned straight after their initial free trial - what percentage is this rounded to 1 decimal place ?**
+
 ```sql
   WITH t1 AS (
     SELECT
@@ -241,9 +249,9 @@ FROM
 |----------------------|------------|
 | 92| 9.20%      |
 
---
+---
 
-### ** Q6.What is the number and percentage of customer plans after their initial free trial ?**
+### **Q6. What is the number and percentage of customer plans after their initial free trial ?**
 
 ```sql
   WITH t1 AS (
@@ -282,9 +290,9 @@ GROUP BY
 | 3       | pro annual    | 37              | 4%         |
 | 4       | churn         | 92              | 9%         |
 
---
+---
 
-### ** Q7.What is the customer count and percentage breakdown of all 5 `plan_name` values at 2020-12-31 ?**
+### **Q7. What is the customer count and percentage breakdown of all 5 `plan_name` values at 2020-12-31 ?**
 
 ```sql
   WITH t1 AS (
@@ -329,9 +337,9 @@ ORDER BY
 | 3       | pro annual    | 37              | 4%         |
 | 4       | churn         | 92              | 9%         |
 
---
+---
 
-### ** Q8.How many customers have upgraded to an annual plan in 2020 ?**
+### **Q8. How many customers have upgraded to an annual plan in 2020 ?**
 
 ```sql
 SELECT
@@ -351,9 +359,9 @@ WHERE
 |-------------------------|
 | 195  |
 
---
+---
 
-### ** Q9.How many days on average does it take for a customer to [upgrade] an annual plan from the day they join Foodie - Fi ?**
+### **Q9. How many days on average does it take for a customer to [upgrade] an annual plan from the day they join Foodie - Fi ?**
 
 ```sql
 SELECT
@@ -377,9 +385,9 @@ WHERE
 |----------------------------|
 | 105     |
 
---
+---
 
-### ** Q10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)**
+### **Q10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)**
 
 ```sql
   WITH t1 AS (
@@ -442,9 +450,9 @@ ORDER BY
 | 300-330 days         | 1               |
 | 330-360 days         | 1               |
 
---
+---
 
-### ** Q11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?**
+### **Q11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?**
 
 ```sql
   WITH first_cte AS (
@@ -495,9 +503,7 @@ FROM
 
 ---
 
-### B. CHALLENGE PAYMENT QUESTION
-<p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=30% height=10%>
+### B. CHALLENGE PAYMENT - QUESTIONS AND SOLUTIONS
 
 The Foodie-Fi team wants you to create a new  `payments`  table for the year 2020 that includes amounts paid by each customer in the  `subscriptions`  table with the following requirements:
 -   monthly payments always occur on the same day of month as the original  `start_date`  of any monthly paid plan,
@@ -505,8 +511,10 @@ The Foodie-Fi team wants you to create a new  `payments`  table for the year 202
 -   upgrades from pro monthly to pro annual are paid at the end of the current billing period and also starts at the end of the month period,
 -   once a customer churns they will no longer make payments.
 
-## 🚀 Solutions
-
+<details>
+<summary>
+DDL for table created.
+</summary>
 ```sql
 DROP TABLE IF EXISTS new_payment_table;
 CREATE TEMP TABLE new_payment_table AS (
@@ -704,7 +712,9 @@ FROM
 WHERE
   customer_id IN (1, 2, 7, 13, 15, 16, 18, 19, 25, 39);
 ```
-A subset of the table created is shown in the table below, with all requirements fulfilled and constraints applied.
+</details>
+
+The top 15 rows of the `new_payment_table` is shown in the table below, with all requirements fulfilled and constraints applied.
 
 | customer_id | plan_id | plan_name     | payment_date             | amount | payment_order |
 |-------------|---------|---------------|--------------------------|--------|---------------|
@@ -759,6 +769,6 @@ A subset of the table created is shown in the table below, with all requirements
 | 39          | 2       | pro monthly   | 2020-08-25 | 10     | 4             |
 
 
---
+---
 
 <p>&copy; 2022 Kingsley Izima</p>
