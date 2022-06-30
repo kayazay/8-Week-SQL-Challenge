@@ -20,11 +20,14 @@ Concepts such as the following were rigorously explained with practice questions
 * Temporary tables, Views, Materialized views and Indexing;
 * Basic Joins;
 * Complex Joins - Cross Joins, Anti Joins, Left Semi Joins;
-* Window Functions; 
-* REGEXP formatting techniques etc.
+* Window Functions;
+* GROUP BY clause;
+* REGEXP formatting techniques, and lots more.
+
+In different ways, these concepts and tricks would be featured in one or more of my submission.
 
 
-Once completed, this repo would hold 8 fo
+Once completed, this repo would hold 8 case studies 
 
 
 
