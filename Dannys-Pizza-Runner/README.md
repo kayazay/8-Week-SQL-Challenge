@@ -230,7 +230,7 @@ This case study has LOTS of questions - they are broken up by 4 sections includi
 + **Ingredient Optimisation**, and
 + **Pricing and Ratings**. 
 
-Feel free to explore whichever appeals to you the most, or all four (if you're like me and are obsessed with completion :) )
+Feel free to explore whichever appeals to you the most, or all four (if you're like me and are obsessed with completion 😃)
 
 <br/>
 
