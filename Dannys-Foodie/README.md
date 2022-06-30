@@ -7,7 +7,7 @@
 <br/>
 
 ## 📕 Table Of Contents
-* 🛠️ [Problem Statement](#problem-statement)
+* 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#%EF%B8%8F-problem-statement)
 * 📂 [Dataset](#dataset)
 * :question:️ [Case Study Questions](#case-study-questions)
 * 🚀 [Solutions](#solutions)
