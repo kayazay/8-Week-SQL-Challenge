@@ -54,15 +54,21 @@ FROM
 GROUP BY
   1;
 --2. What range of week numbers are missing from the dataset?
+WITH to_string_agg AS (
+  SELECT
+    GENERATE_SERIES(1, 53, 1) months_missing
+  EXCEPT
+  SELECT
+    DISTINCT week_number
+  FROM
+    clean_weekly_sales
+  ORDER BY
+    1
+)
 SELECT
-  GENERATE_SERIES(1, 53, 1) months_missing
-EXCEPT
-SELECT
-  DISTINCT week_number
+  STRING_AGG(months_missing :: TEXT, ', ') AS month_missing
 FROM
-  clean_weekly_sales
-ORDER BY
-  1;
+  to_string_agg;
 --3. How many total transactions were there for each year in the dataset?
 SELECT
   calendar_year,
