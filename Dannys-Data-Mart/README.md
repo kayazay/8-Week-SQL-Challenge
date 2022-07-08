@@ -76,7 +76,7 @@ This case study has quite a NUMBER of questions - they are divided into 3 sectio
 + **Before & After Analysis**.
 
  <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/177965293-16f618ab-f6f2-4647-b1e1-463af164493d.gif" width=60% height=50%>
+<img src="https://user-images.githubusercontent.com/60517587/177965293-16f618ab-f6f2-4647-b1e1-463af164493d.gif" width=50% height=40%>
 
 ### Just kidding, I do. I always do! 😎
 
