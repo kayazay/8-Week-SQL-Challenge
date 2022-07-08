@@ -6,8 +6,6 @@
 </br>
 
 ## 📕 Table Of Contents
----
-
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#%EF%B8%8F-problem-statement)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-dataset)
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#question%EF%B8%8F-case-study-questions)
@@ -15,9 +13,6 @@
   * #### 📈 [DATA CLEANSING STEPS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#a-pizza-metrics-questions-and-solutions)
   * #### 🚚 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#b-runner-and-customer-experience---questions-and-solutions)
   * #### 🌶️[ BEFORE & AFTER ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#c-ingredients-optimization---questions-and-solutions)
-
-
----
 
 ## 🛠️ Problem Statement
 
@@ -75,7 +70,6 @@ View diagram
 
 <br/>
 
----
 
 ## :question:️ Case Study Question
 
@@ -115,6 +109,8 @@ In a single query, perform the following operations and generate a new table in 
 
 + Ensure all `null` string values with an "unknown" string value in the original `segment` column as well as the new `age_band` and `demographic` columns.
 + Generate a new `avg_transaction` column as the `sales` value divided by `transactions` rounded to 2 decimal places for each record.
+
+#### NEW TABLE DDL
 
 ```sql
 DROP TABLE IF EXISTS clean_weekly_sales;
@@ -186,7 +182,7 @@ View TABLE random rows
 
 </details>
 
----
+</br>
 
 ### B. Data Exploration
 
@@ -204,6 +200,8 @@ GROUP BY
 | day_of_data_capture |
 |---------------------|
 | Monday              |
+
+---
 
 #### **Q2. What range of `week_number` are missing from the dataset?**
 
@@ -250,6 +248,8 @@ ORDER BY
 | 52             |
 | 53             |
 
+---
+
 #### **Q3. How many total `transactions` were there for each year in the dataset?**
 
 ```sql
@@ -269,6 +269,8 @@ ORDER BY
 | 2018          | 346,406,460      |
 | 2019          | 365,639,285      |
 | 2020          | 375,813,651      |
+
+---
 
 #### **Q4. What is the total `sales` for each `region` for each month?**
 
@@ -301,6 +303,8 @@ LIMIT
 | AFRICA        | 2020-07-01 | $574,216,244.00 |
 | USA           | 2019-04-01 | $277,108,603.00 |
 
+---
+
 #### **Q5. What is the total count of `transactions` for each `platform`.**
 
 ```sql
@@ -317,6 +321,8 @@ GROUP BY
 |----------|------------------|
 | Shopify  | 5,925,169        |
 | Retail   | 1,081,934,227    |
+
+---
 
 #### **Q6. What is the percentage of `sales` for Retail vs Shopify for each month?**
 
@@ -366,6 +372,8 @@ ORDER BY
 | 2020          | 33%      | 29%     | 39%     |
 | 2018          | 32%      | 26%     | 42%     |
 | 2019          | 32%      | 27%     | 40%     |
+
+---
 
 #### **Q7. What is the percentage of `sales` by `demographic` for each year in the dataset?**
 
@@ -442,6 +450,8 @@ FROM
 | 2019-08-01 | 3%      | 97%    |
 | 2019-09-01 | 3%      | 97%    |
 
+---
+
 #### **Q8. Which `age_band` and `demographic` values contribute the most to Retail `sales`?**
 
 ```sql
@@ -476,6 +486,7 @@ ORDER BY
 | Middle Aged  | Couples     | $1,854,160,330.00 | 8%      |
 | Young Adults | Families    | $1,770,889,293.00 | 8%      |
 
+---
 
 #### **Q9. Can we use the `avg_transaction` column to find the average `transaction` size for each year for Retail vs Shopify? If not - how would you calculate it instead?**
 
@@ -520,7 +531,10 @@ WHERE
 | 2018          | 120,770 | 523     |
 | 2020          | 130,698 | 889     |
 
+---
+
 ### C. BEFORE & AFTER ANALYSIS
+
 #### **Q1. Comparison of 4 weeks period before and after change - '2020-06-15'.**
 
 ```SQL
@@ -588,6 +602,8 @@ WHERE
 |---------------|--------------|
 | $4,009,608.00 | 0.17%        |
 
+---
+
 #### **Q2. Comparison of 12 weeks period before and after change - '2020-06-15'.**
 
 ```SQL
@@ -654,6 +670,8 @@ WHERE
 | diff_sales        | sales_change |
 |-------------------|--------------|
 | $654,178,584.00 | -10.22%      |
+
+---
 
 #### **Q3. Comparison of 4 weeks period before and after change - '[x]-06-15' across all years.**
 
@@ -727,6 +745,8 @@ WHERE
 | 2019          | $16,519,108.00 | 0.73%        |
 | 2020          | $4,009,608.00  | 0.17%        |
 
+---
+
 #### **Q4. Comparison of 12 weeks period before and after change - '[x]-06-15' across all years.**
 
 ```SQL
@@ -799,5 +819,6 @@ WHERE
 | 2019          | $557,600,876.00 | -8.85%       |
 | 2020          | $654,178,584.00 | -10.22%      |
 
+---
 
 <p>&copy; 2022 Kingsley Izima</p>
