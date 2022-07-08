@@ -9,7 +9,6 @@
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Diner#question%EF%B8%8F-case-study-questions)
 * ### 🚀 [Solutions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Diner#-solutions-1)
   
----
 
 ## 🛠️ Problem Statement
 
@@ -83,35 +82,22 @@ The final members table captures the `join_date` when a `customer_id` joined the
 
  </details>
 
-### **Relationship between Tables**
+### **E.R.D**
 <details>
 
 <summary>
-View E.R.D diagram
+View diagram
 </summary>
-<img src="https://user-images.githubusercontent.com/60517587/175916813-f7a5997b-7b0f-4be5-939a-e488ed24b2b5.png" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/60517587/175916813-f7a5997b-7b0f-4be5-939a-e488ed24b2b5.png" width=60% height=60%>
 </details>
 
 <br/>
 
 ## :question:️ Case Study Questions
 <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=40% height=30%>
+<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=50% height=40%>
 
-1. What is the total amount each customer spent at the restaurant?
-2. How many days has each customer visited the restaurant?
-3. What was the first item from the menu purchased by each customer?
-4. What is the most purchased item on the menu and how many times was it purchased by all customers?
-5. Which item was the most popular for each customer?
-6. Which item was purchased first by the customer after they became a member?
-7. Which item was purchased just before the customer became a member?
-8. What is the total items and amount spent for each member before they became a member?
-9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
-10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
-
- <br /> 
-
-## 🚀 Solutions
+> ### Alrighty! Let's get right into it people! 👍
 
 ### **Q1. What is the total amount each customer spent at the restaurant?**
 
@@ -238,8 +224,8 @@ WHERE
 | B           | curry                 |
 | B           | ramen                 |
 | C           | ramen                 |
----
 
+---
 
 ### **Q6. Which item was purchased first by the customer after they became a member?**
 ```sql
@@ -395,4 +381,5 @@ GROUP BY
 | B           | 820          |
 
 ---
+
 <p>&copy; 2022 Kingsley Izima</p>
