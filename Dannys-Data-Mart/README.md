@@ -9,16 +9,13 @@
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#%EF%B8%8F-problem-statement)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-dataset)
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#question%EF%B8%8F-case-study-questions)
-
-  * #### 📈 [DATA CLEANSING STEPS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#a-pizza-metrics-questions-and-solutions)
-  * #### 🚚 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#b-runner-and-customer-experience---questions-and-solutions)
-  * #### 🌶️[ BEFORE & AFTER ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#c-ingredients-optimization---questions-and-solutions)
+  * #### 🧼 [DATA CLEANSING STEPS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#a-data-cleansing-steps)
+  * #### 🔎 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#b-data-exploration)
+  * #### ⌛ [BEFORE & AFTER ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#c-before--after-analysis)
 
 ## 🛠️ Problem Statement
 
-> Data Mart is Danny’s latest venture and after running international operations for his online supermarket that specializes in fresh produce - Danny is asking for your support to analyze his sales performance.
-> 
-> In June 2020 - large scale supply changes were made at Data Mart. All Data Mart products now use sustainable packaging methods in every single step from the farm all the way to the customer. Danny needs your help to quantify the impact of this change on the sales performance for Data Mart and it’s separate business areas.
+> Data Mart is Danny’s latest venture and after running international operations for his online supermarket that specializes in fresh produce. Danny is asking for your support to analyze his sales performance. In June 2020 - large scale supply changes were made at Data Mart. All Data Mart products now use sustainable packaging methods in every single step from the farm all the way to the customer. Danny needs your help to quantify the impact of this change on the sales performance for Data Mart and it’s separate business areas.
 
  <br /> 
 
@@ -109,6 +106,8 @@ In a single query, perform the following operations and generate a new table in 
 
 + Ensure all `null` string values with an "unknown" string value in the original `segment` column as well as the new `age_band` and `demographic` columns.
 + Generate a new `avg_transaction` column as the `sales` value divided by `transactions` rounded to 2 decimal places for each record.
+
+</br>
 
 #### NEW TABLE DDL
 
@@ -206,48 +205,26 @@ GROUP BY
 #### **Q2. What range of `week_number` are missing from the dataset?**
 
 ```sql
+WITH to_string_agg AS (
+  SELECT
+    GENERATE_SERIES(1, 53, 1) months_missing
+  EXCEPT
+  SELECT
+    DISTINCT week_number
+  FROM
+    clean_weekly_sales
+  ORDER BY
+    1
+)
 SELECT
-  GENERATE_SERIES(1, 53, 1) months_missing
-EXCEPT
-SELECT
-  DISTINCT week_number
+  STRING_AGG(months_missing :: TEXT, ', ') AS month_missing
 FROM
-  clean_weekly_sales
-ORDER BY
-  1;
+  to_string_agg;
 ```
 
-| months_missing |
-|----------------|
-| 1              |
-| 2              |
-| 3              |
-| 4              |
-| 5              |
-| 6              |
-| 7              |
-| 8              |
-| 9              |
-| 10             |
-| 11             |
-| 37             |
-| 38             |
-| 39             |
-| 40             |
-| 41             |
-| 42             |
-| 43             |
-| 44             |
-| 45             |
-| 46             |
-| 47             |
-| 48             |
-| 49             |
-| 50             |
-| 51             |
-| 52             |
-| 53             |
-
+| month_missing                                                                                         |
+|-------------------------------------------------------------------------------------------------------|
+| 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 |
 ---
 
 #### **Q3. How many total `transactions` were there for each year in the dataset?**
