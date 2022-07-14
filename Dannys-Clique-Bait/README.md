@@ -3,21 +3,20 @@
 
 <img src="https://user-images.githubusercontent.com/60517587/178071018-52ea8ede-5b74-48c5-89c3-6341f85721be.png" width=40% height=40% />
 
-</br>
 
 ## 📕 Table Of Contents
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#%EF%B8%8F-problem-statement)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#-dataset)
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#question%EF%B8%8F-case-study-questions)
-  * #### 🧼 [DIGITAL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#digital-analysis)
-  * #### 🔎 [PRODUCT FUNNEL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#product-funnel-analysis)
-  * #### ⌛ [CAMPAIGNS ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#campaigns-analysis)
+  * #### 🖥️ [DIGITAL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#digital-analysis)
+  * #### 🍱 [PRODUCT FUNNEL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#product-funnel-analysis)
+  * #### 📢 [CAMPAIGNS ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#campaigns-analysis)
+
+<br/>
 
 ## 🛠️ Problem Statement
 
-> Clique Bait is not like your regular online seafood store - the founder and CEO Danny, was also a part of a digital data analytics team and wanted to expand his knowledge into the seafood industry!
->
-> In this case study - you are required to support Danny’s vision and analyse his dataset and come up with creative solutions to calculate funnel fallout rates for the Clique Bait online store.
+> Clique Bait is not like your regular online seafood store - the founder and CEO Danny, was also a part of a digital data analytics team and wanted to expand his knowledge into the seafood industry! In this case study - you are required to support Danny’s vision and analyse his dataset and come up with creative solutions to calculate funnel fallout rates for the Clique Bait online store.
 
  <br /> 
 
@@ -160,7 +159,7 @@ View diagram
 
 <br/>
 
-## :question:️ Case Study Question
+## ❓ Case Study Question
 
 This case study has a LOT of questions - they are divided into 3 sections which are:
 + **Digital Analysis**,  
@@ -168,11 +167,10 @@ This case study has a LOT of questions - they are divided into 3 sections which 
 + **Campaigns Analysis**.
 
  <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/178070968-d324b2ed-5391-46e0-b9d6-4610d3cd19e5.gif" width=40% height=40%>
+<img src="https://user-images.githubusercontent.com/60517587/178070968-d324b2ed-5391-46e0-b9d6-4610d3cd19e5.gif" width=50% height=50%>
 
 </br>
-
-### DIGITAL ANALYSIS
+### 🖥️ DIGITAL ANALYSIS
 #### **Q1. How many `users` are there?**
 
 ```SQL
@@ -487,7 +485,7 @@ ORDER BY
 
 </br>
 
-### PRODUCT FUNNEL ANALYSIS
+### 🍱 PRODUCT FUNNEL ANALYSIS
 
 **Using a single SQL query - create a new output table which has the following details:**
 
@@ -700,7 +698,7 @@ FROM
 
 </br>
 
-###  CAMPAIGNS ANALYSIS
+### 📢 CAMPAIGNS ANALYSIS
 
 > **Generate a table that has 1 single row for every unique `visit_id` record and has the following columns:**
 
