@@ -13,13 +13,13 @@
 * ### :question:️ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#question%EF%B8%8F-case-study-questions)
 * ### 🚀 [Solutions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Foodie#-solutions-1)
  
----
+<br/>
 
 ## 🛠️ Problem Statement
 
 > Subscription based businesses are super popular and Danny realised that there was a large gap in the market - he wanted to create a new streaming service that only had food related content - something like Netflix but with only cooking shows! Danny finds a few smart friends to launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, giving their customers unlimited on-demand access to exclusive food videos from around the world! This case study focuses on using subscription style digital data to answer important business questions.
 
- <br /> 
+ <br/> 
 
 ## 📂 Dataset
 Danny has shared with you 2 key datasets for this case study:
@@ -77,18 +77,17 @@ When customers churn - they will keep their access until the end of their curren
 
 </details>
 
-### **Relationship between Tables**
+### **E.R.D**
 <details>
 
 <summary>
-View E.R.D diagram
+View diagram
 </summary>
 <img src="https://user-images.githubusercontent.com/60517587/176677716-358ae811-87d7-4554-b2bb-6ddf1f0b332e.png" width=50% height=50%>
 </details>
 
 <br/>
 
----
 
 ## :question:️ Case Study Questions
 <p align="center">
@@ -106,7 +105,7 @@ View E.R.D diagram
 10.  Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc.)
 11.  How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 
- <br /> 
+ <br/> 
 
 ## 🚀 Solutions
 
