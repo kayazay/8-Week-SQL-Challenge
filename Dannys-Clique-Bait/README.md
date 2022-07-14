@@ -484,6 +484,8 @@ ORDER BY
 | Russian Caviar | 697                     |
 | Tuna           | 697                     |
 
+---
+
 </br>
 
 ### 🍱 PRODUCT FUNNEL ANALYSIS
@@ -696,6 +698,8 @@ FROM
 | Luxury           | 3032        | 1870          | 466                | 1404      |
 | Shellfish        | 6204        | 3792          | 894                | 2898      |
 | Fish             | 4633        | 2789          | 674                | 2115      |
+
+---
 
 </br>
 
