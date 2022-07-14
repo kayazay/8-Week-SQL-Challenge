@@ -7,10 +7,10 @@
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#%EF%B8%8F-problem-statement-1)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-dataset-1)
 * ### ❓  [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#question%EF%B8%8F-case-study-questions)
-  * #### 📈 [PIZZA METRICS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#a-pizza-metrics-questions-and-solutions)
-  * #### 🚚 [RUNNER AND CUSTOMER EXPERIENCE](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#b-runner-and-customer-experience---questions-and-solutions)
-  * #### 🌶️ [INGREDIENTS OPTIMIZATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#c-ingredients-optimization---questions-and-solutions)
-  * #### 💰 [PRICING AND RATINGS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#d-pricing-and-ratings---questions-and-solutions)
+  * #### 📈 [PIZZA METRICS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-pizza-metrics-questions-and-solutions)
+  * #### 🚚 [RUNNER AND CUSTOMER EXPERIENCE](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-runner-and-customer-experience---questions-and-solutions)
+  * #### 🌶️ [INGREDIENTS OPTIMIZATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-ingredients-optimization---questions-and-solutions)
+  * #### 💰 [PRICING AND RATINGS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-pricing-and-ratings---questions-and-solutions)
 
 
 ## 🛠️ Problem Statement
