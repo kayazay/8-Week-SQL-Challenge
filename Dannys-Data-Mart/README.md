@@ -76,11 +76,9 @@ This case study has quite a NUMBER of questions - they are divided into 3 sectio
 + **Before & After Analysis**.
 
  <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/177965293-16f618ab-f6f2-4647-b1e1-463af164493d.gif" width=40% height=40%>
-
-### Just kidding, I do. I always do! 😎
-
-<br/>
+<img src="https://user-images.githubusercontent.com/60517587/177965293-16f618ab-f6f2-4647-b1e1-463af164493d.gif" width=60% height=50%>
+  
+## Just kidding, I do. I always do! 😎 Let's dive right into it then!
 
 ### 🧼 Data Cleansing Steps
 
@@ -180,6 +178,8 @@ View TABLE random rows
 | 2018-06-11 | 24          | 6            | 2018          | OCEANIA       | Shopify  | Retirees     | Families    | New           | 155          | 26129    | 168.57          |
 
 </details>
+
+---
 
 </br>
 
@@ -509,6 +509,8 @@ WHERE
 | 2020          | 130,698 | 889     |
 
 ---
+
+<br/>
 
 ### ⌛ BEFORE & AFTER ANALYSIS
 
