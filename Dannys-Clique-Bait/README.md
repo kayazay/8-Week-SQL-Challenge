@@ -8,9 +8,9 @@
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#%EF%B8%8F-problem-statement)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#-dataset)
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#question%EF%B8%8F-case-study-questions)
-  * #### 🖥️ [DIGITAL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#-digital-analysis)
-  * #### 🍱 [PRODUCT FUNNEL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-product-funnel-analysis)
-  * #### 📢 [CAMPAIGNS ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-campaigns-analysis)
+  * #### 🖥️ [DIGITAL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#-digital-analysis-1)
+  * #### 🍱 [PRODUCT FUNNEL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-product-funnel-analysis-1)
+  * #### 📢 [CAMPAIGNS ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-campaigns-analysis-1)
 
 <br/>
 
