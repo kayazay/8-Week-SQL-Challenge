@@ -8,7 +8,7 @@
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-dataset)
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#question%EF%B8%8F-case-study-questions)
   * #### 🧼 [DATA CLEANSING STEPS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-cleansing-steps-1)
-  * #### 🔎 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-exploration-1)
+  * #### 🔎 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-exploration)
   * #### ⌛ [BEFORE & AFTER ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-before--after-analysis-1)
 
 <br/>
