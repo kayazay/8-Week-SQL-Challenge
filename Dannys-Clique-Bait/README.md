@@ -8,9 +8,9 @@
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#%EF%B8%8F-problem-statement)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#-dataset)
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#question%EF%B8%8F-case-study-questions)
-  * #### 🖥️ [DIGITAL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#digital-analysis)
-  * #### 🍱 [PRODUCT FUNNEL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#product-funnel-analysis)
-  * #### 📢 [CAMPAIGNS ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#campaigns-analysis)
+  * #### 🖥️ [DIGITAL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Clique-Bait#-digital-analysis)
+  * #### 🍱 [PRODUCT FUNNEL ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-product-funnel-analysis)
+  * #### 📢 [CAMPAIGNS ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-campaigns-analysis)
 
 <br/>
 
@@ -153,7 +153,7 @@ This table lists all of the pages on the Clique Bait website which are tagged an
 <summary>
 View diagram
 </summary>
-<img src="https://user-images.githubusercontent.com/60517587/178071015-0d00a49d-d22d-47af-bb12-5ec7d9527649.png" width=30% height=30%>
+<img src="https://user-images.githubusercontent.com/60517587/178071015-0d00a49d-d22d-47af-bb12-5ec7d9527649.png" width=60% height=50%>
 
 </details>
 
@@ -170,6 +170,7 @@ This case study has a LOT of questions - they are divided into 3 sections which 
 <img src="https://user-images.githubusercontent.com/60517587/178070968-d324b2ed-5391-46e0-b9d6-4610d3cd19e5.gif" width=50% height=50%>
 
 </br>
+
 ### 🖥️ DIGITAL ANALYSIS
 #### **Q1. How many `users` are there?**
 
