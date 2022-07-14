@@ -11,8 +11,7 @@
   * #### 🚚 [RUNNER AND CUSTOMER EXPERIENCE](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#b-runner-and-customer-experience---questions-and-solutions)
   * #### 🌶️ [INGREDIENTS OPTIMIZATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#c-ingredients-optimization---questions-and-solutions)
   * #### 💰 [PRICING AND RATINGS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#d-pricing-and-ratings---questions-and-solutions)
- 
----
+
 
 ## 🛠️ Problem Statement
 
@@ -208,11 +207,11 @@ This table contains all of the `topping_name` values with their corresponding `t
  </details>
 
 
-### **Relationship between tables**
+### **E.R.D**
 <details>
 
 <summary>
-View E.R.D diagram
+View diagram
 </summary>
 <img src="https://user-images.githubusercontent.com/60517587/176715385-adf3edf3-c17a-4ed3-9d8e-c7948a93318c.png" width=80% height=50%>
 </details>
@@ -220,7 +219,7 @@ View E.R.D diagram
 
 <br/>
 
-## :question:️ Case Study Questions
+## ❓ Case Study Questions
 <p align="center">
 <img src="https://user-images.githubusercontent.com/60517587/176716805-463a8ae9-0ff8-4b98-93ef-ecf912f6f0c0.gif" width=60% height=50%>
 
@@ -234,7 +233,7 @@ Feel free to explore whichever appeals to you the most, or all four (if you're l
 
 <br/>
 
-### A. PIZZA METRICS QUESTIONS AND SOLUTIONS
+### 📈 PIZZA METRICS QUESTIONS AND SOLUTIONS
  
 #### **Q1. How many pizzas were ordered?**
 
@@ -508,7 +507,7 @@ GROUP BY
 
 <br /> 
 
-### B. RUNNER AND CUSTOMER EXPERIENCE - QUESTIONS AND SOLUTIONS
+### 🚚 RUNNER AND CUSTOMER EXPERIENCE - QUESTIONS AND SOLUTIONS
 
 To solve the questions in this challenge, I used the MATERIALIZED VIEW - `joined_pizza` that was created in the DDL query.
 
@@ -777,7 +776,7 @@ GROUP BY
 
 <br /> 
 
-### C. INGREDIENTS OPTIMIZATION - QUESTIONS AND SOLUTIONS
+### 🌶️ INGREDIENTS OPTIMIZATION - QUESTIONS AND SOLUTIONS
 
 <details>
 <summary>
@@ -1159,7 +1158,7 @@ ORDER BY
 
 <br /> 
 
-### D. PRICING AND RATINGS - QUESTIONS AND SOLUTIONS
+### 💰 PRICING AND RATINGS - QUESTIONS AND SOLUTIONS
 
 <details>
 <summary> To solve the questions in this challenge I created a VIEW that encompasses all fields required in the questions for this section D.
