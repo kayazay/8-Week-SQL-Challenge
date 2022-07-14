@@ -5,10 +5,10 @@
 
 ## 📕 Table Of Contents
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#%EF%B8%8F-problem-statement)
-* ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-dataset)
-* ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#question%EF%B8%8F-case-study-questions)
+* ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-dataset-1)
+* ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#question%EF%B8%8F-case-study-questions-1)
   * #### 🧼 [DATA CLEANSING STEPS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-cleansing-steps-1)
-  * #### 🔎 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-exploration)
+  * #### 🔎 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-exploration-1)
   * #### ⌛ [BEFORE & AFTER ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-before--after-analysis-1)
 
 <br/>
@@ -68,7 +68,7 @@ View diagram
 <br/>
 
 
-## :question:️ Case Study Question
+## ❓ Case Study Questions
 
 This case study has quite a NUMBER of questions - they are divided into 3 sections including:
 + **Data Cleansing Steps**,  
