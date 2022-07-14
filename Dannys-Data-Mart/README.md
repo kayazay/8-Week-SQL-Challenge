@@ -3,15 +3,15 @@
 
 <img src="https://user-images.githubusercontent.com/60517587/177965312-1650ace9-6d96-4765-9c3e-b40364efa349.png" width=40% height=40% />
 
-</br>
-
 ## 📕 Table Of Contents
 * ### 🛠️ [Problem Statement](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#%EF%B8%8F-problem-statement)
 * ### 📂 [Dataset](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-dataset)
 * ### ❓ [Case Study Questions](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#question%EF%B8%8F-case-study-questions)
-  * #### 🧼 [DATA CLEANSING STEPS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#a-data-cleansing-steps)
-  * #### 🔎 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#b-data-exploration)
-  * #### ⌛ [BEFORE & AFTER ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#c-before--after-analysis)
+  * #### 🧼 [DATA CLEANSING STEPS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-cleansing-steps)
+  * #### 🔎 [DATA EXPLORATION](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-data-exploration)
+  * #### ⌛ [BEFORE & AFTER ANALYSIS](https://github.com/kayazay/8-Week-SQL-Challenge/tree/main/Dannys-Data-Mart#-before--after-analysis)
+
+<br/>
 
 ## 🛠️ Problem Statement
 
@@ -80,9 +80,9 @@ This case study has quite a NUMBER of questions - they are divided into 3 sectio
 
 ### Just kidding, I do. I always do! 😎
 
----
+<br/>
 
-### A. Data Cleansing Steps
+### 🧼 Data Cleansing Steps
 
 In a single query, perform the following operations and generate a new table in the data_mart schema named `clean_weekly_sales`:
 + Convert the `week_date` to a DATE format.
@@ -107,7 +107,7 @@ In a single query, perform the following operations and generate a new table in 
 + Ensure all `null` string values with an "unknown" string value in the original `segment` column as well as the new `age_band` and `demographic` columns.
 + Generate a new `avg_transaction` column as the `sales` value divided by `transactions` rounded to 2 decimal places for each record.
 
-</br>
+---
 
 #### NEW TABLE DDL
 
@@ -183,7 +183,7 @@ View TABLE random rows
 
 </br>
 
-### B. Data Exploration
+### 🔎 Data Exploration
 
 #### **Q1. What day of the week is used for each `week_date` value?**
 
@@ -510,7 +510,7 @@ WHERE
 
 ---
 
-### C. BEFORE & AFTER ANALYSIS
+### ⌛ BEFORE & AFTER ANALYSIS
 
 #### **Q1. Comparison of 4 weeks period before and after change - '2020-06-15'.**
 
