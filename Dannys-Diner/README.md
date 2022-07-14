@@ -95,7 +95,7 @@ View diagram
 
 ## :question:️ Case Study Questions
 <p align="center">
-<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=50% height=40%>
+<img src="https://user-images.githubusercontent.com/60517587/175916801-6d714682-2d02-426e-8a9f-4ad5f716dc98.gif" width=60% height=50%>
 
 > ### Alrighty! Let's get right into it people! 👍
 
