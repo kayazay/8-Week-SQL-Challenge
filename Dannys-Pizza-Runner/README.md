@@ -12,11 +12,13 @@
   * #### 🌶️ [INGREDIENTS OPTIMIZATION](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-ingredients-optimization---questions-and-solutions)
   * #### 💰 [PRICING AND RATINGS](https://github.com/kayazay/8-Week-SQL-Challenge/blob/main/Dannys-Pizza-Runner/README.md#-pricing-and-ratings---questions-and-solutions)
 
+<br/>
 
 ## 🛠️ Problem Statement
 
 > Danny was scrolling through his Instagram feed when something really caught his eye - “80s Retro Styling and Pizza Is The Future!” Danny was sold on the idea, but he knew that he had one more genius idea to combine with his Pizza Empire - he was going to Uberize it - and so Pizza Runner was launched! Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runner Headquarters to customers. He has prepared for us an entity relationship diagram of his database design but requires further assistance to clean his data and apply some basic calculations so he can better direct his runners and optimize Pizza Runner’s operations.
- <br /> 
+
+<br /> 
 
 
 ## 📂 Dataset
@@ -215,7 +217,6 @@ View diagram
 </summary>
 <img src="https://user-images.githubusercontent.com/60517587/176715385-adf3edf3-c17a-4ed3-9d8e-c7948a93318c.png" width=80% height=50%>
 </details>
-
 
 <br/>
 
